@@ -7,7 +7,7 @@ import {ROUTES} from "../../core/routes/routes";
 export const SideBar = () => {
     return (
         <div className='sidebar'>
-            <NavLink to={ROUTES.dashboard}>dashboard</NavLink>
+            <NavLink className={({isActive}) => isActive ? 'activeLink' : 'link'} to={ROUTES.dashboard}>dashboard</NavLink>
             <hr/>
             <NavLink className={({isActive}) => isActive ? 'activeLink' : 'link'} to={ROUTES.allTodos}>all</NavLink>
             <NavLink className={({isActive}) => isActive ? 'activeLink' : 'link'} to={ROUTES.favoriteTodos}>favorite</NavLink>

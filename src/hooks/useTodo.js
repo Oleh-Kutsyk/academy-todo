@@ -56,7 +56,7 @@ export const useTodo = () => {
     };
 
     const getDeletedTodos = () => Object.values(todos).filter(todo => todo.isDeleted);
-    const getFavoriteTodos = () => Object.values(todos).filter(todo => todo.isFavorite);
+    const getFavoriteTodos = () => Object.values(todos).filter(todo => !todo.isDeleted && todo.isFavorite)
     const getCompletedTodos = () => Object.values(todos).filter(todo => !todo.isDeleted && todo.isCompleted)
 
     const getSortedTodos = () => Object.values(todos).sort(todo => {
