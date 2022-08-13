@@ -1,0 +1,41 @@
+.sidebar {
+    padding-top: 30px;
+    height: 100vh;
+    width: 220px;
+    background: aqua;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+hr {
+    background: #582fa4;
+    height: 1px;
+    width: 100%;
+    display: flex;
+    border: none;
+}
+
+.activeLink {
+    background: #00f7ff;
+    color: blue;
+}
+
+a {
+    box-sizing: border-box;
+    color: black;
+    text-decoration: none;
+    text-transform: capitalize;
+    height: 40px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    font-size: 18px;
+}
+
+a:hover {
+    background: #00f7ff;
+}
