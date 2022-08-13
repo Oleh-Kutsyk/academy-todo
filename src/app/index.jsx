@@ -6,7 +6,7 @@ import {useTodo} from "../hooks/useTodo";
 
 export const App = () => {
     const todo = useTodo();
-
+    console.log('todo', todo)
     return (
         <TodoContext.Provider value={todo}>
             <BrowserRouter>
