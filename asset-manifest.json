@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/academy-todo/static/css/main.29a13958.css",
-    "main.js": "/academy-todo/static/js/main.b171d05b.js",
+    "main.js": "/academy-todo/static/js/main.d3d6cb13.js",
     "index.html": "/academy-todo/index.html",
     "main.29a13958.css.map": "/academy-todo/static/css/main.29a13958.css.map",
-    "main.b171d05b.js.map": "/academy-todo/static/js/main.b171d05b.js.map"
+    "main.d3d6cb13.js.map": "/academy-todo/static/js/main.d3d6cb13.js.map"
   },
   "entrypoints": [
     "static/css/main.29a13958.css",
-    "static/js/main.b171d05b.js"
+    "static/js/main.d3d6cb13.js"
   ]
 }
