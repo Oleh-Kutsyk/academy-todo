@@ -19,7 +19,7 @@ export const AllTodosPage = () => {
 
     return (
         <React.Fragment>
-            <h1>AllTodosPage</h1>
+            <h1>All Todos</h1>
             <main className='todosContainer'>
                 <Todos type='all'  todos={todos.filter(todo => !todo.isDeleted)} {...action}/>
             </main>

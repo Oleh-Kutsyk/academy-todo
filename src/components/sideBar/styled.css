@@ -1,8 +1,8 @@
 .sidebar {
     padding-top: 30px;
     height: 100vh;
-    width: 220px;
-    background: aqua;
+    min-width: 220px;
+    background: #afd7d7;
     z-index: 1;
     display: flex;
     flex-direction: column;
@@ -19,13 +19,14 @@ hr {
 }
 
 .activeLink {
-    background: #00f7ff;
-    color: blue;
+    background: rgb(170 239 241 / 82%);
+    color: #000000d9;
+    font-weight: 600;
 }
 
 a {
     box-sizing: border-box;
-    color: black;
+    color: #2e2e2e;
     text-decoration: none;
     text-transform: capitalize;
     height: 40px;
@@ -37,5 +38,11 @@ a {
 }
 
 a:hover {
-    background: #00f7ff;
+    background: rgba(0, 247, 255, 0.32);
+}
+
+@media screen and (max-width: 1000px) {
+    .sidebar {
+        min-width: 135px;
+    }
 }

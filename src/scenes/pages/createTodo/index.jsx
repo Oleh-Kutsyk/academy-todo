@@ -16,9 +16,9 @@ export const CreateTodoPage = () => {
     }
     return (
         <React.Fragment>
-            <h1>CreateTodoPage</h1>
+            <h1>Create Todo</h1>
             <form className='createForm' onSubmit={createTodo}>
-                <input className='input' type="text" name='title'/>
+                <input className='input' placeholder='title' type="text" name='title'/>
                 <button type='submit'>create</button>
             </form>
         </React.Fragment>

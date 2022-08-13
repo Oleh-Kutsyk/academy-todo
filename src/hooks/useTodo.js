@@ -59,7 +59,10 @@ export const useTodo = () => {
     const getFavoriteTodos = () => Object.values(todos).filter(todo => todo.isFavorite);
     const getCompletedTodos = () => Object.values(todos).filter(todo => !todo.isDeleted && todo.isCompleted)
 
-    const getSortedTodos = () => Object.values(todos).sort(todo => todo.createdAt.getTime() ? -1 : 1);
+    const getSortedTodos = () => Object.values(todos).sort(todo => {
+        console.log('todo', todo.createdAt)
+        return new Date(todo.createdAt).getTime() ? -1 : 1
+    });
 
 
     return {

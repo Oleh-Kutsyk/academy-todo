@@ -14,16 +14,20 @@ export const Todos = ({todos, type, ...action}) => {
                                 type="checkbox"
                                 onChange={() => action.toggleCompleted(todo.id)}/>
                         }
-                        <span className={todo.isCompleted ? 'completed' : 'title'}>{todo.title}</span>
+                        <p className={todo.isCompleted ? 'completed title' : 'title'}>{todo.title}</p>
                     </div>
                     {type !== 'deleted' ?
                         <div className='actions'>
-                            <input
-                                className='checkbox'
-                                checked={todo.isFavorite}
-                                type="checkbox"
-                                onChange={() => action.toggleFavorite(todo.id)}
-                            />
+                            <div>
+                                <label htmlFor="favorite">Favorite</label>
+                                <input
+                                    className='checkbox'
+                                    id='favorite'
+                                    checked={todo.isFavorite}
+                                    type="checkbox"
+                                    onChange={() => action.toggleFavorite(todo.id)}
+                                />
+                            </div>
                             <button className='delete' onClick={() => action.deleteTodo(todo.id)}>delete todo</button>
                         </div> :
                         <button className='delete' onClick={() => action.deleteTodo(todo.id)}>Return todo</button>

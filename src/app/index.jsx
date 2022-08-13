@@ -1,5 +1,5 @@
 import React from 'react';
-import {BrowserRouter} from "react-router-dom";
+import { HashRouter } from "react-router-dom";
 import {RenderRoutes} from "../core/routes/renderRoutes";
 import {TodoContext} from "../core/context/todoContext";
 import {useTodo} from "../hooks/useTodo";
@@ -9,9 +9,9 @@ export const App = () => {
 
     return (
         <TodoContext.Provider value={todo}>
-            <BrowserRouter>
+            <HashRouter>
                 <RenderRoutes/>
-            </BrowserRouter>
+            </HashRouter>
         </TodoContext.Provider>
     );
 };
